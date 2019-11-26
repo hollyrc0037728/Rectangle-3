@@ -17,9 +17,14 @@ namespace Rectangle_3
             InitializeComponent();
         }
 
-        private void Label1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-
-        }
+            double Width = double.Parse(textBox1.Text);
+            double Height = double.Parse(textBox2.Text);
+            double Area = Width * Height;
+            
+            textBox3.Text = String.Empty;
+            textBox3.AppendText(Area.ToString());
+         }
     }
 }
